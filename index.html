@@ -1,55 +1,76 @@
-<html lang="en" dir="ltr">
-  <head>
+<!DOCTYPE html>
+<!--[if lt IE 9 ]><html class="no-js oldie" lang="en"> <![endif]-->
+<!--[if IE 9 ]><html class="no-js oldie ie9" lang="en"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!-->
+<html class="no-js" lang="en">
+<!--<![endif]-->
+
+<head>
+
+    <!--- basic page needs
+    ================================================== -->
     <meta charset="utf-8">
-    <link rel="stylesheet" href="index.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js" integrity="sha384-w1Q4orYjBQndcko6MimVbzY0tgp4pWB4lZ7lr30WKz0vr/aWKhXdBNmNb5D92v7s" crossorigin="anonymous"></script>
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Castoro&display=swap" rel="stylesheet">
-    <title>Ritu Arora- Profile Page</title>
-  </head>
+    <title>Neetin Verma</title>
+    <meta name="description" content="">
+    <meta name="author" content="">
 
-  <body>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top">
+    <!-- mobile specific metas
+    ================================================== -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-        <div class="collapse navbar-collapse" id="navbarNavDropdown">
-          <ul class="navbar-nav">
-            <li class="nav-item">
-            <a class="nav-link" href="#">
-              Home
-            </a>
-            </li>
-            <li class="nav-item">
-            <a class="nav-link" href="#contact">
-            Contact
-            </a>
-          </li>
-          <li class="nav-item">
-          <a class="nav-link" href="#scroll">
-          Education
-          </a>
-        </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#work">
-              Work Experience
-            </a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#Publications">
-              Publications
-            </a>
-          </li>
-            </div>
-        </ul>
-      </div>
-    </nav>
-<div class="align-right">
-<br><br>
+    <!-- CSS
+    ================================================== -->
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/vendor.css">
+    <link rel="stylesheet" href="css/main.css">
+
+    <!-- script
+    ================================================== -->
+    <script src="js/modernizr.js"></script>
+    <script src="js/pace.min.js"></script>
+
+    <!-- favicons
+    ================================================== -->
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+
+</head>
+
+<body id="top">
+
+    <!-- header
+    ================================================== -->
+    <header class="s-header">
+
+        <div class="header-logo">
+            <a class="site-logo" href="index.html"><img src="images/logo.png" alt="Homepage"></a>
+        </div>
+
+        <nav class="header-nav-wrap">
+            <ul class="header-nav">
+                <li class="current"><a class="smoothscroll"  href="#home" title="home">Home</a></li>
+                <li><a class="smoothscroll"  href="#about" title="about">About</a></li>
+                <li><a class="smoothscroll"  href="#works" title="works">Works</a></li>
+                <li><a class="smoothscroll"  href="#contact" title="contact">Contact</a></li>
+            </ul>
+        </nav>
+
+    </header> <!-- end s-header -->
+
+
+   <!-- home
+   ================================================== -->
+   <section id="home" class="s-home page-hero target-section" data-parallax="scroll" data-image-src="images/hero-bg.jpg" data-natural-width=2200 data-natural-height=1300 data-position-y=top>
+
+        <div class="overlay"></div>
+        <div class="shadow-overlay"></div>
+
+        <div class="home-content">
+
+            <div class="row home-content__main">
+
+
+    </section> <!-- end s-home -->
 
 
     <!-- about
@@ -59,7 +80,7 @@
         <div class="row narrow section-intro has-bottom-sep">
             <div class="col-full text-center">
               
-                <h1>About Me</h1>
+             <h1>About Me</h1>
                 <p class="lead">16+ years of hands-on experience in all phases of software product development, in multiple technical and functional domains and roles. Internationally experienced, global manager focus on delivering quality products using Agile methodologies.</p>
             </div>
         </div>
@@ -68,19 +89,19 @@
                 <h3>Skills Set</h3>
                 <ul class="skill-bars">
                     <label for="file">Product Management &emsp;:</label>
-                    <progress id="file" value="90" max="100"> 32% </progress><br><br>
+                    <progress id="file" value="90" max="100"> 32% </progress><br>
                     <label for="file">Agile Methodologies &emsp; &ensp;:</label>
-                    <progress id="file" value="90" max="100"> 32% </progress><br><br>
+                    <progress id="file" value="90" max="100"> 32% </progress><br>
                      <label for="file">Project Management &emsp; :</label>
-                    <progress id="file" value="85" max="100"> 32% </progress><br><br>
-                     <label for="file">Data Strategy &emsp; &emsp; :</label>
-                    <progress id="file" value="90" max="100"> 32% </progress><br><br>
+                    <progress id="file" value="85" max="100"> 32% </progress><br>
+                     <label for="file">Data Strategy &emsp; &emsp; &ensp; :</label>
+                    <progress id="file" value="90" max="100"> 32% </progress><br>
                      <label for="file">People Management &emsp; &emsp; :</label>
-                    <progress id="file" value="90" max="100"> 32% </progress><br><br>
+                    <progress id="file" value="90" max="100"> 32% </progress><br>
                     <label for="file">Delivery Management &emsp; :</label>
-                    <progress id="file" value="100" max="100"> 32% </progress><br><br>
+                    <progress id="file" value="100" max="100"> 32% </progress><br>
                     <label for="file">Stakeholder Management:</label>
-                    <progress id="file" value="100" max="100"> 32% </progress><br><br>
+                    <progress id="file" value="100" max="100"> 32% </progress><br>
                 </ul>
             </div>
 
